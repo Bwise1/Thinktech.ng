@@ -11,7 +11,7 @@ function Hero() {
     </div>  
 
     <div className=" font-TTF text-black flex justify-center text-center text-[20px].">
-      <p className=' w-[37rem] mt-[2rem] text-center'>Our team of skilled professionals work tirelessly to develop innovative solutions that drive progress and make life easier for our clients. We have the knowledge and expertise to tackle any challenge. Join us as we strive towards a more efficient and interconnected world."</p>  
+      <p className=' w-[37rem] mt-[2rem] text-center'>Our team of skilled professionals work tirelessly to develop innovative solutions that drive progress and make life easier for our clients. We have the knowledge and expertise to tackle any challenge. Join us as we strive towards a more efficient and interconnected world.</p>  
     </div>
 
     <div className="justify-center text-center flex mt-7 flex-col sm:flex-row md:flex-rw lg:flex-row">

@@ -1,16 +1,29 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import logo from '../Asssets/thinktech-logo.svg'
-import { Bars2Icon } from '@heroicons/react/24/solid'
+import { XMarkIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon } from '@heroicons/react/24/solid'
+import HeaderRow from './HeaderRow'
+
+
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            'my-html-custom-tag': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+        }
+    }
+}
 
 function Header() {
 
+  
   let Links =[
     {name:"HOME",link:"/"},
     {name:"OUR WORK",link:"/"},
     {name:"ENGAGE US",link:"/"},
   ];
   let [open,setOpen]=useState(false);
+
 
   return (
     <div className='flex justify-center max-w-7xl mx-auto'>
@@ -28,11 +41,29 @@ function Header() {
         </div>
       
       
-       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-       <ion-icon name={open ? 'close':'menu'}></ion-icon>
+       <div onClick={()=>setOpen(!open)} className='text-3xl absolute flex justify-center items-center right-8 top-6 cursor-pointer md:hidden transition-all duration-500 ease-in'>
+       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden transition-all duration-500 ease-in'>
       
+      </div>
+
+       {/* {(!open) &&
+       <XMarkIcon  className="h-8 w-8 text-black"/>
+       }
+       <Bars3Icon  className="h-8 w-8 text-black {`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${!open ? 'dis'}`} "/>
+       
+       {open &&
+       <XMarkIcon  className="h-8 w-8 text-black"/>
+       } */}
+       
+       {/* <HeaderRow Icon={open ? 'XMarkIcon':'Bars3Icon'} />
+       <HeaderRow Icon={XMarkIcon} /> */}
+
+       <Bars3Icon  className={`h-8 w-8 text-black transition-all duration-500 ease-in ${open ? 'hidden ':'flex'}`} />
+
+       <XMarkIcon  className={`h-8 w-8 transition-all duration-500 ease-in text-black ${open ? 'flex ':'hidden'}`} />
        </div>
 
+       
        <ul className={`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
