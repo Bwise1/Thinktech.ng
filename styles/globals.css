@@ -1,33 +1,35 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* @import "./base.css"; */
+@import "tailwindcss/utilities";
 
 @font-face {
-    font-family: "TTF";
-    src: url("../public/TTFirsNeue-Medium.ttf");
-    /* font-family: "TTFb";
+  font-family: "TTF";
+  src: url("../public/TTFirsNeue-Medium.ttf");
+  /* font-family: "TTFb";
     src: url("../public/TTFirsNeue-Bold.ttf"); */
-  }
+}
 @font-face {
-     font-family: "TTFb";
-    src: url("../public/TTFirsNeue-DemiBold.ttf");
-  }
+  font-family: "TTFb";
+  src: url("../public/TTFirsNeue-DemiBold.ttf");
+}
 @font-face {
-     font-family: "TTFr";
-    src: url("../public/TTFirsNeue-Regular.ttf");
+  font-family: "TTFr";
+  src: url("../public/TTFirsNeue-Regular.ttf");
+}
+
+@layer base {
+  .box {
+    @apply bg-[#F3F9FF] mt-[50px] py-[5%] px-[20px] -skew-y-5;
+  }
+  .box1 {
+    @apply bg-[#F3F9FF] -skew-y-5;
   }
 
-  @layer base {
-
-    .box{
-     @apply bg-[#F3F9FF] mt-[50px] py-[5%] px-[20px] -skew-y-5
-    }
-    .box1{
-     @apply bg-[#F3F9FF] -skew-y-5
-    }
-
-    .box > .wrapper {
-      @apply skew-y-5
-    }
+  .box > .wrapper {
+    @apply skew-y-5;
   }
+}
