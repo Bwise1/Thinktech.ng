@@ -15,7 +15,7 @@ function Focus() {
             <div className="grid grid-cols-1 gap-14  sm:grid-cols-1  md:gap-28 lg:grid-cols-2">
 
                 {/* First card */}
-                <div className="bg-[#F3F9FF] group cursor-pointer border rounded-lg overflow-hidden">
+                <div className="bg-[#F3F9FF] group cursor-pointer border overflow-hidden">
                     <div className="">
                       <Image src={macbook} alt='' className='h-[23rem] w-full group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover' >
                     </Image>
