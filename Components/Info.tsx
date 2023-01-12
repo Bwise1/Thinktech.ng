@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import product from '../Asssets/product-design.svg'
+import product from '../Asssets/Product-design.svg'
 import app from '../Asssets/App.svg'
 import web from '../Asssets/Web-maintenance.svg'
 
