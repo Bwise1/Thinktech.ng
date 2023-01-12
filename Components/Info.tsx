@@ -28,7 +28,7 @@ function Info() {
            
 
           <div className="flex mb-[21px]">
-            <h1 className=' font-TTFb text-[20px] text-[#0864B7] '>Product designing</h1>
+            <h1 className=' font-TTFb text-[22px] text-[#0864B7] '>Product designing</h1>
           </div>
           
 
@@ -37,7 +37,7 @@ function Info() {
           </div>
 
           <div className="bg-[#0864B7] text-white overflow-hidden mb-[5px] py-[11px] px-[8px] w-fit cursor-pointer ">
-            <div className=" font-TTF">
+            <div className=" font-TTF text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] ">
             ENGAGE US
             </div>
            </div>
@@ -53,7 +53,7 @@ function Info() {
            
 
           <div className="flex mb-[21px]">
-            <h1 className=' font-TTFb text-[20px] text-[#0864B7] '>Mobile Application Development</h1>
+            <h1 className=' font-TTFb text-[22px] text-[#0864B7] '>Mobile Application Development</h1>
           </div>
           
 
@@ -62,7 +62,7 @@ function Info() {
           </div>
 
           <div className="bg-[#0864B7] text-white overflow-hidden py-[11px] px-[8px] w-fit cursor-pointer">
-            <div className="font-TTF">
+            <div className="font-TTF text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px]">
             ENGAGE US
             </div>
            </div>
@@ -78,7 +78,7 @@ function Info() {
            
 
           <div className="flex mb-[21px]">
-            <h1 className=' font-TTFb text-[20px] text-[#0864B7] '>Website Development</h1>
+            <h1 className=' font-TTFb text-[22px] text-[#0864B7] '>Website Development</h1>
           </div>
           
 
@@ -87,7 +87,7 @@ function Info() {
           </div>
 
           <div className="bg-[#0864B7] text-white overflow-hidden mb-[5px] py-[11px] px-[8px] w-fit cursor-pointer ">
-            <div className="font-TTF">
+            <div className="font-TTF text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px]">
             ENGAGE US
             </div>
            </div>

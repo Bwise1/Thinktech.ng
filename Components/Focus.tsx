@@ -34,7 +34,7 @@ function Focus() {
 
                         <p className='mt-[20px] font-TTF mr-5 sm:mr-[135px] md:mr-[135px] lg:mr-[135px] '>Everyone has a problem to solve, a service to render or a business to run, but a lot of people go about it in the hectic and traditional way and it is difficult sometimes to develop solutions amidst all the chaos. This is why ThinkTech is here; to provide solutions, and find simpler and effective methods to go about regular or even irregular activities to ensure ease and speed.</p>
 
-                        <button className=" bg-[#0864B7] mt-[90px] text-white overflow-hidden py-[11px] px-[8px] font-TTF">READ MORE</button>
+                        <button className=" bg-[#0864B7] text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] mt-[90px] text-white overflow-hidden py-[11px] px-[8px] font-TTF">READ MORE</button>
                     </div>
 
 
@@ -60,7 +60,7 @@ function Focus() {
 Our trainingsare not just focused on teaching the tools, applications or methods necessary to have a career in tech but to transfer a lot of ideas, shortcuts and wisdom that have been accumulated by the tutors from many years of experience.
 </p>
 
-                        <button className=" bg-[#0864B7] mt-[41px] text-white overflow-hidden py-[11px] px-[8px] font-TTF">READ MORE</button>
+                        <button className=" bg-[#0864B7] text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] mt-[41px] text-white overflow-hidden py-[11px] px-[8px] font-TTF">READ MORE</button>
                     </div>
 
 

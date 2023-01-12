@@ -17,7 +17,7 @@ function Hero() {
     <div className="justify-center text-center flex mt-7  sm:flex-row md:flex-rw lg:flex-row">
       <div className=". group py-[0.7rem] px-[0.6rem] sm:px-[1.8rem] md:px-[1.8rem] lg:px-[1.8rem] mr-5 lg:mr-3 md:mr-3 sm:mr-3 flex justify-center border-[1.6px] border-[#0864B7]  hover:bg-[#0864B7] hover:text-white transition-all duration-200 cursor-pointer ">
 
-        <div className="font-TTF text-[14px] text-[#0864B7] group-hover:text-white whitespace-nowrap overflow-hidden">LEARN MORE</div>
+        <div className="font-TTF text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] text-[#0864B7] group-hover:text-white whitespace-nowrap overflow-hidden">LEARN MORE</div>
         
         <div className="ml-[1.5rem] sm:ml-[1.8rem] md:ml-[1.8rem] lg:ml-[1.8rem] ">
         <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ function Hero() {
 
 
       <div className=". group a py-[0.7rem] px-[0.6rem] sm:px-[1.8rem] md:px-[1.8rem] lg:px-[1.8rem] flex justify-center border-[1.6px] border-[#0864B7]  bg-[#0864B7] hover:bg-white transition-all duration-200 cursor-pointer">
-        <div className="group font-TTF text-[14px] text-white group-hover:text-[#0864B7] whitespace-nowrap overflow-hidden">ENGAGE US</div>
+        <div className="group font-TTF text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] text-white group-hover:text-[#0864B7] whitespace-nowrap overflow-hidden">ENGAGE US</div>
 
         <div className=" ml-[1.5rem] sm:ml-[1.8rem] md:ml-[1.8rem] lg:ml-[1.8rem] ">
         <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
