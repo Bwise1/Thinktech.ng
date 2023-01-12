@@ -13,8 +13,8 @@ module.exports = {
       TTFr: ["TTFr", "sans-serif"],
     },
     skew: {
-      '5': '5deg',
-    }
+      5: "5deg",
+    },
   },
   plugins: [],
-}
+};
