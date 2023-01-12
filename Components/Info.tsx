@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import product from '../Asssets/product-design.svg'
+import product from '../Asssets/product design.svg'
 import app from '../Asssets/App.svg'
 import web from '../Asssets/Web-maintenance.svg'
 
@@ -15,7 +15,7 @@ function Info() {
             </div>
             
 
-           <div className=".. grid grid-cols-1 gap-[71px] sm:grid-cols-2 md:gap-[71px] p-12 lg:grid-cols-3 mb-10 lg:mb-0 md:mb-0">
+           <div className=".. grid grid-cols-1 gap-[71px] sm:grid-cols-2 md:gap-[71px] lg:grid-cols-3 mb-10 lg:mb-0 md:mb-0">
 
             {/* First card */}
            

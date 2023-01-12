@@ -7,12 +7,12 @@ function Focus() {
   return (
     <div>
 
-        <div className="max-w-7xl mx-auto flex flex-col mt-[55px]">
+        <div className="max-w-7xl mx-auto flex flex-col mt-[55px] px-[20px] ">
            <div className="flex justify-center">
             <h1 className=' font-TTFb text-[24px] mb-[65px]'>WHAT WE DO</h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-14 p-10 sm:grid-cols-1  md:gap-28 md:p-12 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-14  sm:grid-cols-1  md:gap-28 lg:grid-cols-2">
 
                 {/* First card */}
                 <div className="bg-[#F3F9FF] group cursor-pointer border rounded-lg overflow-hidden">

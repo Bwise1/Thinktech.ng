@@ -58,9 +58,9 @@ function Header() {
        {/* <HeaderRow Icon={open ? 'XMarkIcon':'Bars3Icon'} />
        <HeaderRow Icon={XMarkIcon} /> */}
 
-       <Bars3Icon  className={`h-8 w-8 text-black transition-all duration-500 ease-in ${open ? 'hidden ':'flex'}`} />
+       <Bars3Icon  className={`h-8 w-8 text-black mt-[-7px] transition-all duration-500 ease-in ${open ? 'hidden ':'flex'}`} />
 
-       <XMarkIcon  className={`h-8 w-8 transition-all duration-500 ease-in text-black ${open ? 'flex ':'hidden'}`} />
+       <XMarkIcon  className={`h-8 w-8 transition-all mt-[-7px] duration-500 ease-in text-black ${open ? 'flex ':'hidden'}`} />
        </div>
 
        
