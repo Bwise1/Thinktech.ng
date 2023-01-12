@@ -6,7 +6,7 @@ function Footer() {
         <div className="max-w-7xl mx-auto p-5">
 
             <div className="lg:mt-[100px] mt-10  justify-start flex ">
-                <h1 className=' font-TTFb text-[20px] text-white mb-[23px] '>For more enquiries:</h1>
+                <h1 className=' font-TTFb text-[24px] sm:text-[20px] md:text-[20px] lg:text-[20px] text-white mb-[23px] '>For more enquiries:</h1>
             </div>
             <div className=".. lg:flex-row lg:justify-start  flex flex-col items-start  lg:mb-[100px] mb-10">
 
