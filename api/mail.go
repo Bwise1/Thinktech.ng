@@ -15,7 +15,7 @@ type Payload struct{
 }
 func Handler(w http.ResponseWriter, r *http.Request) {
 	log.Println(r.URL.Path)
-	if r.URL.Path != "/mail" {
+	if r.URL.Path != "/api/mail" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
