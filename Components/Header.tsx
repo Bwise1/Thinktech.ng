@@ -64,7 +64,6 @@ function Header() {
        <XMarkIcon  className={`h-8 w-8 transition-all  duration-500 ease-in text-black ${open ? 'flex ':'hidden'}`} />
        </div>
        </div>
-       
 
        
        <ul className={`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
