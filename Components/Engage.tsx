@@ -1,9 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 function Engage() {
   return (
-    <div className='max-w-7xl mx-auto p-5 mt-[220px] mb-[125px] '>
-        <div className="flex">
+    <div className='max-w-7xl mx-auto p-5 mt-[220px] mb-[125px] ' id='engage'>
+          <motion.div
+    whileInView={{  y: [100, 50, 0], opacity: [0, 1] }}
+    transition={{ duration: 0.5, type: 'tween' }}
+        >
+          <div className="flex">
           <h2 className=' font-TTFb text-[#0864B7] text-[27px] mb-[54px] '>Engage us today!</h2>  
         </div>
 
@@ -53,6 +58,8 @@ function Engage() {
          <div className="flex sm:justify-center md:justify-center lg:justify-center mt-10">
          <button className=" bg-[#0864B7] text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] mt-[41px] text-white overflow-hidden py-5 px-5 font-TTF">ENGAGE US</button>
          </div>
+        </motion.div>
+        
         
           
 

@@ -17,19 +17,45 @@
   src: url("../public/TTFirsNeue-DemiBold.ttf");
 }
 @font-face {
-  font-family: "TTFr";
-  src: url("../public/TTFirsNeue-Regular.ttf");
+  font-family: "TTFl";
+  src: url("../public/TTFirsNeue-Light.ttf");
 }
+@font-face {
+  font-family: "TTFn";
+  src: url("../public/TTFirsNeue-Normal.ttf");
+}
+
+
 
 @layer base {
   .box {
     @apply bg-[#F3F9FF] mt-[50px] py-[5%] px-[20px] -skew-y-5;
   }
   .box1 {
-    @apply bg-[#F3F9FF] -skew-y-5;
+    /* @apply bg-[#F3F9FF] -skew-y-5; */
+    background-color: #F3F9FF;  
+  transform: skewY(-5deg);
   }
 
   .box > .wrapper {
-    @apply skew-y-5;
+    /* @apply skew-y-5; */
+
+    transform: skewY(5deg);
   }
 }
+
+
+
+
+/* .box {
+  background-color: #F3F9FF;  
+  transform: skew(5deg);
+  width: 100%;
+}
+.box1 {
+ background-color: #F3F9FF;  
+  transform: skewY(-5deg);
+}
+
+.box > .wrapper {
+ transform: skewY(5deg); */

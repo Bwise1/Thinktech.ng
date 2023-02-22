@@ -11,6 +11,8 @@ module.exports = {
       TTF: ["TTF", "sans-serif"],
       TTFb: ["TTFb", "sans-serif"],
       TTFr: ["TTFr", "sans-serif"],
+      TTFl: ["TTFl", "sans-serif"],
+      TTFn: ["TTFn", "sans-serif"],
     },
     skew: {
       5: "5deg",

@@ -2,13 +2,19 @@ import Image from 'next/image'
 import React from 'react'
 import macbook from '../Asssets/macbook.jpg'
 import people from '../Asssets/people.png'
+import { motion } from 'framer-motion';
 
 function Focus() {
   return (
     <div>
 
         <div className="max-w-7xl mx-auto flex flex-col mt-[55px] px-[20px] ">
-           <div className="flex justify-center">
+          
+        <motion.div
+            whileInView={{  y: [100, 50, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5, type: 'tween' }}
+          >
+            <div className="flex justify-center">
             <h1 className=' font-TTFb text-[24px] mb-[65px]'>WHAT WE DO</h1>
             </div>
 
@@ -17,10 +23,13 @@ function Focus() {
                 {/* First card */}
                 <div className="bg-[#F3F9FF] group cursor-pointer border overflow-hidden">
                     <div className="">
-                      <Image src={macbook} alt='' className='h-[23rem] w-full group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover' >
+                      <div className="group-hover:scale-105 object-cover">
+                        <Image src={macbook} alt='' className='h-[23rem] w-full  transition-transform duration-200 ease-in-out ' >
                     </Image>
+                      </div>
+                      
                      <div className="flex flex-col ">
-                        <div className="box1 sm:h-[92px] sm:top-[-41px] h-[60px] w-full bg-[#F3F9FF] relative z-9 top-[-25px] ">
+                        <div className="box1 sm:h-[92px] sm:top-[-41px] left-[0.001px] h-[60px] w-[101%] bg-[#F3F9FF] relative z-9 top-[-25px] ">
                       </div>
                       
                      </div>
@@ -44,7 +53,7 @@ function Focus() {
                       <Image src={people} alt='' className='h-[23rem] w-full group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover' >
                     </Image>
                      <div className="flex flex-col ">
-                        <div className="box1 sm:h-[93px] sm:top-[-41px] h-[60px] w-full bg-[#F3F9FF] relative z-9 top-[-25px] ">
+                        <div className="box1 sm:h-[93px] sm:top-[-41px] h-[60px] w-[101%] bg-[#F3F9FF] relative z-9 top-[-25px] ">
                       </div>
                       
                      </div>
@@ -68,9 +77,14 @@ Our trainingsare not just focused on teaching the tools, applications or methods
                 
                 
             </div>
+          </motion.div>
+          
+           
         </div>
     </div>
+
   )
 }
 
 export default Focus
+

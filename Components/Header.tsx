@@ -4,6 +4,7 @@ import logo from '../Asssets/thinktech-logo.svg'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import HeaderRow from './HeaderRow'
+import { Link } from 'react-scroll'
 
 
 declare global {
@@ -18,9 +19,9 @@ function Header() {
 
   
   let Links =[
-    {name:"HOME",link:"/"},
+    {name:"HOME",link:"hero"},
     {name:"OUR WORK",link:"/"},
-    {name:"ENGAGE US",link:"/"},
+    {name:"ENGAGE US",link:"engage"},
   ];
   let [open,setOpen]=useState(false);
 
@@ -66,11 +67,11 @@ function Header() {
        
 
        
-       <ul className={`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+       <ul className={`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-              <a href={link.link} className='text-gray-800 font-TTF hover:text-[#0864B7] duration-500'>{link.name}</a>
+              <Link to={link.link} spy={true} smooth={true} offset={-100} className='text-gray-800 font-TTF hover:text-[#0864B7] duration-500'>{link.name}</Link>
             </li>
           ))
         }

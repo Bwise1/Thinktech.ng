@@ -4,13 +4,13 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className="p-3">
+    <div className="p-3" id='hero'>
       <div className="max-w-7xl mx-auto flex justify-center">
-      <h1 className='w-[571px] mt-[211px] text-[40px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-TTFb text-center'>Developing innovative technology solutions for 
+      <h1 className='w-[571px] md:mt-[211px] lg:mt-[211px] sm:mt-[90px] text-[40px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-TTFb text-center'>Developing innovative technology solutions for 
     <span className='text-[#0864B7]'> a smarter future of work.</span></h1>  
     </div>  
 
-    <div className=" font-TTF text-black flex justify-center text-center text-[20px].">
+    <div className=" font-TTFn text-black flex justify-center text-center text-[20px].">
       <p className=' w-[37rem] mt-[2rem] text-center'>Our team of skilled professionals work tirelessly to develop innovative solutions that drive progress and make life easier for our clients. We have the knowledge and expertise to tackle any challenge. Join us as we strive towards a more efficient and interconnected world.</p>  
     </div>
 
