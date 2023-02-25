@@ -56,7 +56,7 @@ function Engage() {
          </form>
 
          <div className="flex sm:justify-center md:justify-center lg:justify-center mt-10">
-         <button className=" bg-[#0864B7] text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] mt-[41px] text-white overflow-hidden py-5 px-5 font-TTF">ENGAGE US</button>
+         <button className=" bg-[#0864B7] hover:text-dark-blue hover:text-[14px] border-[1.6px] hover:bg-white hover:border-dark-blue text-[14px] sm:text-[16x] md:text-[16px] lg:text-[16px] mt-[41px] text-white overflow-hidden py-5 px-5 font-TTF">ENGAGE US</button>
          </div>
         </motion.div>
         

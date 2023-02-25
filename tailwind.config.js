@@ -6,7 +6,12 @@ module.exports = {
     "./Components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-blue': '#0864B7',
+        'light-blue': '#F3F9FF',
+      },
+    },
     fontFamily: {
       TTF: ["TTF", "sans-serif"],
       TTFb: ["TTFb", "sans-serif"],

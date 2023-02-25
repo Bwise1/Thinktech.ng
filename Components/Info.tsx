@@ -64,7 +64,7 @@ function Info() {
           </div>
           
 
-          <div className="flex mb-[70px]">
+          <div className="flex mb-[24px]">
             <p className='font-TTFn   w-[228px]'>With our mobile app development service, we help brand businesses build mobile applications that makes their work easier, faster and smarter. We help build apps that meet your business needs and go beyond them by providing a platform for your users who want to access every feature of your app but you don’t want to think about it.</p>
           </div>
 

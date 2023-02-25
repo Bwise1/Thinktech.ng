@@ -33,8 +33,8 @@ function Header() {
 
 
 
-<div className='shadow-sm md:shadow-none lg:shadow-none w-full fixed md:absolute lg:absolute z-50 top-0 left-0'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7 flex-col '>
+<div className='shadow-sm md:shadow-none lg:shadow-none w-full fixed  z-50 top-0 left-0'>
+      <div className='md:flex items-center justify-between backdrop-blur-sm bg-[hsla(0,0%,100%,.25)] py-6 px-16 px flex-row'>
 
       
         <div className="flex">
@@ -65,26 +65,26 @@ function Header() {
        </div>
        </div>
 
-       
-       <ul className={`md:flex lg:mt-[54px] md:mt-[54px] md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
+       <div className="">
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent lg:bg-transparent sm:bg-[#F3F9FF]  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
         {
           Links.map((link)=>(
-            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
+            <li key={link.name} className='md:ml-8 text-[1rem] md:my-0 my-7 cursor-pointer'>
               <Link to={link.link} spy={true} smooth={true} offset={-100} className='text-gray-800 font-TTF hover:text-[#0864B7] duration-500'>{link.name}</Link>
             </li>
           ))
         }
        </ul>
        </div>
+       
+       </div>
     </div>
 
       {/* <div className=''>
-
         <div className="flex justify-center">
           <Image className='' src={logo} alt="ggg" ></Image>
         </div>
         
-
         
         <div className="flex items-center space-x-5 cursor-pointer font-TTF font-medium">
             <h3 className='hover:text-[#0864B7]'>HOME</h3>
