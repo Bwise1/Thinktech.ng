@@ -34,7 +34,7 @@ function Header() {
 
 
 <div onClick={()=>setOpen(!open)} className='shadow-sm md:shadow-none lg:shadow-none w-full fixed  z-50 top-0 left-0'>
-      <div className={`md:flex items-center justify-between  py-6 px-16 px flex-row ${open ? 'bg-white ':'backdrop-blur-sm bg-[hsla(0,0%,100%,.25)]'}`}>
+      <div className={`md:flex items-center justify-between  py-6 px-10 md:px-16 lg:px-16 px flex-row ${open ? 'bg-white ':'backdrop-blur-sm bg-[hsla(0,0%,100%,.25)]'}`}>
 
       
         <div className="flex">
