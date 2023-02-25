@@ -33,8 +33,8 @@ function Header() {
 
 
 
-<div className='shadow-sm md:shadow-none lg:shadow-none w-full fixed  z-50 top-0 left-0'>
-      <div className='md:flex items-center justify-between backdrop-blur-sm bg-[hsla(0,0%,100%,.25)] py-6 px-16 px flex-row'>
+<div onClick={()=>setOpen(!open)} className='shadow-sm md:shadow-none lg:shadow-none w-full fixed  z-50 top-0 left-0'>
+      <div className={`md:flex items-center justify-between  py-6 px-16 px flex-row ${open ? 'bg-white ':'backdrop-blur-sm bg-[hsla(0,0%,100%,.25)]'}`}>
 
       
         <div className="flex">
@@ -66,7 +66,7 @@ function Header() {
        </div>
 
        <div className="">
-        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent lg:bg-transparent sm:bg-[#F3F9FF]  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent lg:bg-transparent bg-white  sm:bg-white  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px] cursor-pointer '}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-[1rem] md:my-0 my-7 cursor-pointer'>

@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="p-3" id='hero'>
       <div className="max-w-7xl mx-auto flex justify-center">
-      <h1 className='w-[571px] md:mt-[90px] lg:mt-[90px] sm:mt-[90px] text-[40px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-TTFb text-center'>Developing innovative technology solutions for 
+      <h1 className='w-[571px] mt-[90px] md:mt-[90px] lg:mt-[90px] sm:mt-[90px] text-[40px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-TTFb text-center'>Developing innovative technology solutions for 
     <span className='text-[#0864B7]'> a smarter future of work.</span></h1>  
     </div>  
 
