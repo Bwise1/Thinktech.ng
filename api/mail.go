@@ -58,10 +58,10 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 func sendEmail(p Payload) error {
 	username := os.Getenv("EMAIL")
-	password := os.Getenv("EMAIL_PASSWORD")
+	password := os.Getenv("PASSWORD")
 	to := p.Email
-	smtpHost := os.Getenv("SMTP_HOST")
-	smtpPort := os.Getenv("SMTP_PORT")
+	smtpHost := os.Getenv("SMTPHOST")
+	smtpPort := os.Getenv("SMTPPORT")
 	log.Println(smtpPort)
 	message := fmt.Sprintf("From: %s\r\nTo: %s\r\nSubject: New message from %s\r\n\r\n%s", p.Email, to, p.Name, p.Message)
 	auth := smtp.PlainAuth("", username, password, smtpHost)
