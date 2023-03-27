@@ -32,13 +32,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 		// Parse JSON payload
 		var p Payload
-		log.Println(p)
+
 		err = json.Unmarshal(body, &p)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
 			return
 		}
-
+		log.Println(p)
 		// Send email
 		err = sendEmail(p)
 		if err != nil {
