@@ -57,9 +57,9 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func sendEmail(p Payload) error {
-	username := os.Getenv("EMAIL")
+	username := os.Getenv("USERNAME")
 	password := os.Getenv("PASSWORD")
-	to := p.Email
+	to := os.Getenv("EMAIL")
 	smtpHost := os.Getenv("SMTPHOST")
 	smtpPort := os.Getenv("SMTPPORT")
 	log.Println(smtpPort)
