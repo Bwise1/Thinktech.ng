@@ -32,6 +32,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 		// Parse JSON payload
 		var p Payload
+		log.Println(p)
 		err = json.Unmarshal(body, &p)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
@@ -61,6 +62,7 @@ func sendEmail(p Payload) error {
 	to := p.Email
 	smtpHost := os.Getenv("SMTP_HOST")
 	smtpPort := os.Getenv("SMTP_PORT")
+	log.Println(smtpPort)
 	message := fmt.Sprintf("From: %s\r\nTo: %s\r\nSubject: New message from %s\r\n\r\n%s", p.Email, to, p.Name, p.Message)
 	auth := smtp.PlainAuth("", username, password, smtpHost)
 	err := smtp.SendMail(smtpHost+":"+smtpPort, auth, username, []string{to}, []byte(message))
