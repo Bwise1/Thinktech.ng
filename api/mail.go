@@ -1,33 +1,73 @@
 package handler
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"net/smtp"
+	"os"
 )
 
-type Payload struct{
-	Email string
-	Name string
-	Message string
-
+type Payload struct {
+	Email   string `json:"email"`
+	Name    string `json:"name"`
+	Message string `json:"message"`
 }
+
 func Handler(w http.ResponseWriter, r *http.Request) {
-	log.Println(r.URL.Path)
 	if r.URL.Path != "/api/mail" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
-	switch r.Method{
+	switch r.Method {
 	case "POST":
+		// Read request body
 		body, err := ioutil.ReadAll(r.Body)
-    if err != nil {
-        panic(err)
-    }
-    log.Println(string(body))
-	default:
-		fmt.Fprintf(w, "%v Method not allowed",r.Method)
-	}
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
 
+		// Parse JSON payload
+		var p Payload
+		err = json.Unmarshal(body, &p)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
+		}
+
+		// Send email
+		err = sendEmail(p)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+
+		// Send response
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("Email sent successfully!"))
+
+	default:
+		w.WriteHeader(http.StatusMethodNotAllowed)
+		w.Write([]byte(fmt.Sprintf("%v Method not allowed", r.Method)))
+	}
+}
+
+func sendEmail(p Payload) error {
+	username := os.Getenv("EMAIL")
+	password := os.Getenv("EMAIL_PASSWORD")
+	to := p.Email
+	smtpHost := os.Getenv("SMTP_HOST")
+	smtpPort := os.Getenv("SMTP_PORT")
+	message := fmt.Sprintf("From: %s\r\nTo: %s\r\nSubject: New message from %s\r\n\r\n%s", p.Email, to, p.Name, p.Message)
+	auth := smtp.PlainAuth("", username, password, smtpHost)
+	err := smtp.SendMail(smtpHost+":"+smtpPort, auth, username, []string{to}, []byte(message))
+	if err != nil {
+		log.Println(err)
+		return err
+	}
+	log.Println("Email Sent Successfully!")
+	return nil
 }
