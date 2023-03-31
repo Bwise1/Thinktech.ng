@@ -62,13 +62,13 @@ function Header() {
        <HeaderRow Icon={XMarkIcon} /> */}
             <div className="mt-[-7px]">
               <Bars3Icon
-                className={`h-8 w-8 text-black transition-all duration-500 ease-in ${
+                className={`h-[3rem] w-8 text-black transition-all duration-500 ease-in ${
                   open ? "hidden " : "flex"
                 }`}
               />
 
               <XMarkIcon
-                className={`h-8 w-8 transition-all  duration-500 ease-in text-black ${
+                className={`h-[3rem] w-8 transition-all  duration-500 ease-in text-black ${
                   open ? "flex " : "hidden"
                 }`}
               />
